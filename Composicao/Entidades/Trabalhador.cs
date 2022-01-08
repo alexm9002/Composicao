@@ -10,10 +10,10 @@ namespace Composicao.Entidades {
         public List<HorasContrato> Contratos { get; set; } = new List<HorasContrato>();
 
         public Trabalhador(string nome, NivelTrabalhador nivel, double salarioBase, Departamento departamento) {
-            Nome = nome;
-            Nivel = nivel;
-            SalarioBase = salarioBase;
-            Departamento = departamento;
+            this.Nome = nome;
+            this.Nivel = nivel;
+            this.SalarioBase = salarioBase;
+            this.Departamento = departamento;
         }
         public void AddContrato(HorasContrato contrato) {
             Contratos.Add(contrato);
